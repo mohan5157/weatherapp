@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #2c3e50; 
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.city input {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.city input:focus {
+    background-color: #fff; 
+}
+
+.city button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #3498db; 
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.city button:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+
+.error-message {
+    text-align: center;
+    color: #e74c3c; 
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.weather-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-temp {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.weather-date {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #bdc3c7; 
+}
+
+.weather-stats {
+    margin-top: 15px;
+}
+
+.wind, .humidity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.wind-icon, .humidity-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+body::before {
+    content: "";
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaoRiCY9AXqzYfg6zUzyxjADcHIs6GUQ2bw&s') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+}
